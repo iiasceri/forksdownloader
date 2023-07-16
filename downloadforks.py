@@ -1,4 +1,3 @@
-
 import requests
 import subprocess
 import argparse
@@ -24,11 +23,14 @@ headers = {
 owner = args.owner
 repo = args.repo
 
+# Clone the original repository
+subprocess.run(["git", "clone", f"https://github.com/{owner}/{repo}.git", f"{repo}_original"])
+
 # Get the list of forks
 response = requests.get(f"https://api.github.com/repos/{owner}/{repo}/forks", headers=headers)
 response.raise_for_status()
 forks = response.json()
 
-# Clone each fork
-for fork in forks:
-    subprocess.run(["git", "clone", fork["clone_url"]])
+# Clone each fork into a separate directory
+for i, fork in enumerate(forks, start=1):
+    subprocess.run(["git", "clone", fork["clone_url"], f"fork{i}"])
