@@ -9,6 +9,6 @@ token="GITHUB_TOKEN"
 source venv/bin/activate
 
 pip install -r requirements.txt
-python downloadforks.py -owner $owner -repo $repo -onlyactive -token $token
-#python downloadforks.py -owner $owner -repo $repo -token $token
+#python downloadforks.py -owner $owner -repo $repo -onlyactive -token $token
+python downloadforks.py -owner $owner -repo $repo -token $token
 python mergeforks.py $repo # pass the repo name as an argument

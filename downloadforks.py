@@ -33,26 +33,15 @@ for i in range(1, 101):  # assuming maximum 100 forks for simplicity
     if os.path.exists(f"fork{i}"):
         shutil.rmtree(f"fork{i}")
 
-# Clone the original repository
-os.system(f"git clone https://github.com/{owner}/{repo}.git {repo}_original &")
-
-# Create a redirect HTML file in the original repository directory
-with open(f"{repo}_original/gotorepo.html", "w") as f:
-    f.write(f'''<html>
-<head>
-<meta http-equiv="refresh" content="0; URL=https://github.com/{owner}/{repo}" />
-</head>
-<body>
-</body>
-</html>''')
 
 # A coroutine function to clone a fork asynchronously
 async def clone_fork(session, fork, i):
     if args.onlyactive:
-        six_months_ago = datetime.now(timezone.utc) - timedelta(days=6*30)
+        six_months_ago = datetime.now(timezone.utc) - timedelta(days=6 * 30)
         if parse_date(fork['pushed_at']) <= six_months_ago:
             return  # Skip inactive fork
-    await asyncio.create_subprocess_shell(f"git clone {fork['clone_url']} fork{i}")  # Run git clone in a subprocess
+    subprocess = await asyncio.create_subprocess_shell(f"git clone {fork['clone_url']} fork{i}")  # Run git clone in a subprocess
+    await subprocess.wait()  # Wait for the subprocess to finish
 
     # Create a redirect HTML file in the fork directory
     with open(f"fork{i}/gotorepo.html", "w") as f:
@@ -64,13 +53,33 @@ async def clone_fork(session, fork, i):
 </body>
 </html>''')
 
+
 # A coroutine function to get and clone all forks asynchronously
 async def get_and_clone_forks():
     page = 1
     tasks = []  # A list of tasks to await
     async with aiohttp.ClientSession(headers=headers) as session:  # Create a session for HTTP requests
+
+        # Clone the original repository asynchronously
+        subprocess = await asyncio.create_subprocess_shell(f"git clone https://github.com/{owner}/{repo}.git {repo}_original")
+        await subprocess.wait()  # Wait for the subprocess to finish
+
+        # Create a redirect HTML file in the original repository directory
+        try:
+            with open(f"{repo}_original/gotorepo.html", "w") as f:
+                f.write(f'''<html>
+<head>
+<meta http-equiv="refresh" content="0; URL=https://github.com/{owner}/{repo}" />
+</head>
+<body>
+</body>
+</html>''')
+        except FileNotFoundError:
+            print(f"Could not write to {repo}_original/gotorepo.html. The directory may not exist yet.")
+
         while True:
-            response = await session.get(f"https://api.github.com/repos/{owner}/{repo}/forks?page={page}&per_page=100")  # Get the list of forks asynchronously
+            response = await session.get(
+                f"https://api.github.com/repos/{owner}/{repo}/forks?page={page}&per_page=100")  # Get the list of forks asynchronously
             response.raise_for_status()
             forks = await response.json()  # Parse the JSON response asynchronously
             if not forks:  # If the list is empty, we've reached the end of the forks
@@ -80,6 +89,7 @@ async def get_and_clone_forks():
                 tasks.append(asyncio.create_task(clone_fork(session, fork, i)))
             page += 1  # Go to the next page
         await asyncio.gather(*tasks)  # Wait for all tasks to finish
+
 
 # Run the main coroutine function
 asyncio.run(get_and_clone_forks())
