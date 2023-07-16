@@ -2,15 +2,85 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/all_merged_into_original" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork10" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork11" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork12" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork13" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork14" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork15" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork16" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork17" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork18" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork19" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork20" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork21" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork22" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork23" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork24" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork25" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork26" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork27" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork28" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork29" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork30" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork31" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork32" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork33" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork34" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork35" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork36" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork37" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork38" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork39" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork40" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork41" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork42" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork43" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork44" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork45" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork46" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork47" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork48" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork49" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork50" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork51" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork52" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork53" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork54" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork55" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork56" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork57" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork58" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork59" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork60" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork61" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork62" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork63" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork65" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork66" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork67" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork68" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork69" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork70" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork71" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork72" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork73" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork74" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork75" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork76" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork77" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork78" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fork8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork9" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/smalidea_original" vcs="Git" />
   </component>
 </project>
