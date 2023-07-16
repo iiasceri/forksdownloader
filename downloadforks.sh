@@ -1,3 +1,3 @@
 #!/bin/bash
-pip install requests
-python downloadforks.py -owner $1 -repo $2
+pip install -r requirements.txt
+python downloadforks.py -owner JesusFreke -repo smalidea -onlyactive

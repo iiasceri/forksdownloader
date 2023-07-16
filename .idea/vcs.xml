@@ -2,6 +2,15 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork56" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork77" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fork8" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/smalidea_original" vcs="Git" />
   </component>
 </project>
